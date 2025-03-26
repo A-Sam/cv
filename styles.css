@@ -1,0 +1,40 @@
+/* Custom styles for modernity and pure grey dark mode */
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+/* Dark mode with pure grey tones */
+body.dark {
+    background-color: #2d2d2d; /* Pure dark grey */
+    color: #d4d4d4; /* Light grey */
+}
+
+body.dark h1 {
+    color: #e5e5e5; /* Very light grey */
+}
+
+body.dark .bg-white {
+    background-color: #3a3a3a; /* Medium dark grey */
+}
+
+body.dark .text-gray-700 {
+    color: #d4d4d4; /* Light grey */
+}
+
+body.dark .text-gray-600 {
+    color: #a1a1a1; /* Mid grey */
+}
+
+body.dark .bg-gray-100 {
+    background-color: #4a4a4a; /* Slightly lighter dark grey */
+}
+
+body.dark .text-gray-900 {
+    color: #e5e5e5; /* Very light grey */
+}
+
+/* Sticky skills column */
+aside {
+    min-width: 200px;
+}
