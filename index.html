@@ -105,113 +105,277 @@
                         <p class="text-gray-600 italic text-sm">CARIAD, Volkswagen, Munich, Germany | 03/22 - Present |
                             Full-time</p>
                         <ul class="mt-2 text-gray-700 list-disc list-inside">
-                            <li>Developed an advanced HMI infotainment digital twin cluster in Qt</li>
-                            <li>Architected a robust HMI backend algorithms, streamlining maps data structure loading
-                                and handling</li>
-                            <li>Maintained low-latency communication in HMI Abstraction backend using Iceoryx and AOS,
-                                enhancing real-time
-                                performance</li>
-                            <li>Optimized distributed HMI backend arbiters, reducing communication latency</li>
-                            <li>Reduced the new codebase size by ~30% through compile-time template meta routines and
-                                revamped
-                                legacy code with advanced C++ and meta-programming, enabling multi-target
-                                deployment with much less adaptation effort</li>
-                            <li>Boosted core HMI backend kernels performance 15% by vectorizing code with SIMD and
-                                edge HW accelerators offloading (Qualcomm)</li>
+                            <li>Architected and implemented a robust HMI backend algorithms, streamlining HD complex
+                                maps data through lightweight structure composition loading and processing</li>
+                            <li>Developed low-latency communication in HMI Abstraction backend (HMI backend Arbiter)
+                                using proprietary AOS(based on Iceoryx middleware),
+                                enhancing real-time performance</li>
+                            <li>Eliminated heavy and repetitive usage of interfaces adapters in the legacy code via
+                                proper variant interface decomposition.</li>
+                            <li>Authored a single HMI backend interface statically carries defined and compiled custom
+                                payloads to multiple customer functions.</li>
+                            <li>Developed React based apps to visually design a custom payload for the HMI interface
+                                using
+                                React Flow</li>
+                            <li>Reduced interface custom maintenance by 90% via fully automated interface generation
+                                pipeline using Jinja2 templates.</li>
+                            <li>Optimized modular HMI backend arbiter plugins, reducing communication latency</li>
+                            <li>Boosted core HMI backend core kernels performance by 2x</li>
+                            <li>Reduced the memory footprint of the HMI backend size by ~30% through compile-time
+                                template meta routines and
+                                refactored legacy code with advanced C++ template meta-programming, enabling
+                                multi-target deployment with significantly less adaptation effort</li>
+                            <li>Developed and lead the HMI infotainment digital twin cluster initiative in Qt SDK</li>
                             <li>Spearheaded a team to develop a dynamic ADAS HMI communication stack, adopted across
                                 multiple projects</li>
                             <li>Automated ~20% of repetitive tasks by deploying offline to automation scripts</li>
                         </ul>
-                        <p class="mt-2 text-gray-600 italic">Key Skills: C++17, QT, AOS, ROS, Perf, OpenMP, SIMD,
-                            GTEST-GMOCK, JS, React</p>
-                    </div>
 
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900">Graduate Researcher / ExaHype2</h3>
-                        <p class="text-gray-600 italic text-sm">Technische Universität München, Germany | 04/23 - 12/23
-                            | Part-time</p>
-                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                            <li>Accelerated ExaHyPE Rusanov solver performance with CUDA-based Euler kernels, achieving
-                                near
-                                theoretical peak performance</li>
-                            <li>Improved GPU offloading efficiency for complex grid geometries using CUDA</li>
-                            <li>Achieved a 28x speedup over baseline OpenMP implementations</li>
-                        </ul>
-                        <p class="mt-2 text-gray-600 italic">Key Skills: C++20, OpenMP, CUDA, Perf, PDE</p>
-                    </div>
+                        <div class="space-y-6">
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span
+                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
+                                    C++17</span>
+                                <span
+                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
+                                    QT</span>
+                                <span
+                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
+                                    AOS</span>
+                                <span
+                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
+                                    ROS</span>
+                                <span
+                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
+                                    Perf</span>
+                                <span
+                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
+                                    OpenMP</span>
+                                <span
+                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
+                                    SIMD</span>
+                                <span
+                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
+                                    GTEST-GMOCK</span>
+                                <span
+                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
+                                    JS</span>
+                                <span
+                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
+                                    React</span>
+                            </div>
 
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900">Software Engineer / ADAS Simulation</h3>
-                        <p class="text-gray-600 italic text-sm">Altran Deutschland, Munich, Germany | 10/18 - 02/22 |
-                            Full-time</p>
-                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                            <li>Co-built the Linux Model Environment (LiME) server, enabling robust ADAS sensor
-                                simulation
-                            </li>
-                            <li>Enhanced simulation fidelity with environment modeling using OSI, FMI, and ProtoBuff
-                                standards</li>
-                            <li>Achieved real-time pointcloud visualization using OpenGL and ROS, improving testing
-                                efficiency</li>
-                            <li>Accelerated rendering by 35% with CUDA optimizations, enhancing simulation throughput
-                            </li>
-                            <li>Scaled simulation routines to multi-core environments, reducing processing time by 20%
-                            </li>
-                            <li>Created a custom OpenGL render engine for LiME, adopted as the standard visualization
-                                tool</li>
-                            <li>Designed space-time efficient data structures, cutting memory usage by 15%</li>
-                            <li>Improved computational efficiency by 25% through SIMD and OpenMP task sharding</li>
-                            <li>Developed reliable communication drivers (TCP/IP v4, SomeIP, FMU, ZMQ), ensuring
-                                seamless integration</li>
-                        </ul>
-                        <p class="mt-2 text-gray-600 italic">Key Skills: C++14, Qt, Bazel, ROS, OpenGL, OpenMP, SIMD</p>
-                    </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Graduate Researcher / ExaHype2</h3>
+                                    <p class="text-gray-600 italic text-sm">Technische Universität München, Germany |
+                                        04/23
+                                        -
+                                        12/23
+                                        | Part-time</p>
+                                    <ul class="mt-2 text-gray-700 list-disc list-inside">
+                                        <li>Accelerated ExaHyPE Rusanov solver performance with CUDA-based Euler
+                                            kernels,
+                                            profiling
+                                            the bandwidth bound problem, achieving near theoretical peak performance
+                                        </li>
+                                        <li>Improved GPU offloading efficiency for complex grid geometries using CUDA
+                                        </li>
+                                        <li>Achieved a 28x speedup over baseline OpenMP implementations</li>
+                                    </ul>
+                                    <div class="mt-2 flex flex-wrap gap-2">
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">C++20</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">OpenMP</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">CUDA</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Perf</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">PDE</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Numerical
+                                            Solvers</span>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900">Software Engineer / Automotive Steering
-                            Development</h3>
-                        <p class="text-gray-600 italic text-sm">Robert Bosch, Germany/Vietnam | 12/17 - 09/18 |
-                            Full-time</p>
-                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                            <li>Delivered a fully functional Auto Steering module, improving vehicle automation
-                                reliability</li>
-                            <li>Streamlined development through comprehensive SWRE requirement analysis, reducing
-                                revisions by 10%</li>
-                            <li>Implemented robust CAN and UDS protocols, ensuring 100% communication uptime</li>
-                            <li>Achieved 95% test coverage with black and white box testing, enhancing code quality</li>
-                            <li>Ensured safety compliance with ASIL-D, MISRA, and ISO26262 standards, passing all audits
-                            </li>
-                            <li>Built user-friendly GUI/CLI applications, reducing user training time by 30%</li>
-                        </ul>
-                        <p class="mt-2 text-gray-600 italic">Key Skills: Qt, CANoe, CAPL, Lauterbach T32</p>
-                    </div>
+                            <div class="space-y-6">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Software Engineer / ADAS
+                                        Simulation
+                                    </h3>
+                                    <p class="text-gray-600 italic text-sm">Altran Deutschland, Munich, Germany |
+                                        10/18
+                                        -
+                                        02/22
+                                        |
+                                        Full-time</p>
+                                    <ul class="mt-2 text-gray-700 list-disc list-inside">
+                                        <li>Co-developed the Linux Model Environment (LiME) server, enabling robust ADAS
+                                            sensor
+                                            simulation
+                                        </li>
+                                        <li>Built LiME Juicer, a 3d high fidelity environment rendering engine based on
+                                            Open Simulation Interface (OSI)</li>
+                                        <li>Integrated in LiME Juicer OSI, FMI,
+                                            and
+                                            ProtoBuff
+                                            standards</li>
+                                        <li>Enabled real-time point-cloud visualization using OpenGL and ROS,
+                                            improving
+                                            testing env.
+                                            efficiency</li>
+                                        <li>Accelerated rendering by 6x speedup with CUDA kernels, enhancing
+                                            simulation
+                                            throughput
+                                        </li>
+                                        <li>Scaled simulation routines to multi-core environments, reducing
+                                            conforming to latency of 60 FPS
+                                        </li>
+                                        <li>Reduced frames dropping noticeably through non-blocking OpenMP task sharing
+                                        </li>
+                                        <li>Developed reliable low-latency communication drivers for LiME using (TCP/IP
+                                            v4,
+                                            SomeIP, FMU, ZMQ)
+                                            standards/libs,
+                                            ensuring
+                                            seamless integration</li>
+                                    </ul>
 
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900">Embedded Systems Engineer</h3>
-                        <p class="text-gray-600 italic text-sm">Fpt Software Co., Vietnam | 07/15 - 11/17 | Full-time
-                        </p>
-                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                            <li>Developed a high-performance Car Rear View Camera system, improving driver visibility by
-                                20%</li>
-                            <li>Optimized SPI and MCU drivers for iMX6, reducing latency by 15% on baremetal Linux</li>
-                            <li>Enhanced system reliability with AUTOSAR BSW drivers, cutting failure rates by 10%</li>
-                            <li>Improved communication efficiency by 25% with AUTOSAR CAN and Ethernet drivers</li>
-                            <li>Automated build processes with a local CI pipeline, slashing deployment time by 40%</li>
-                        </ul>
-                        <p class="mt-2 text-gray-600 italic">Key Skills: iMX8, AUTOSAR, C++, Python, Qt</p>
-                    </div>
+                                    <div class="mt-2 flex flex-wrap gap-2">
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">C++14/17</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Qt</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Bazek</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">ROS/ROS2</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">OpenGL</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">CUDA</span>
+                                        <span
+                                            class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">AVX
+                                            intrinsics
+                                            SIMD</span>
 
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900">Field Maintenance Engineer</h3>
-                        <p class="text-gray-600 italic text-sm">General Motors, Egypt | 02/15 - 05/15 | Full-time</p>
-                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                            <li>Automated plant operations with PLC, increasing production uptime by 15%</li>
-                            <li>Integrated advanced sensors into production lines, boosting accuracy by 20%</li>
-                            <li>Developed maintenance plans that reduced downtime by 25%, enhancing plant efficiency
-                            </li>
-                        </ul>
-                        <p class="mt-2 text-gray-600 italic">Key Skills: PLC, Sensors, DCS</p>
-                    </div>
-                </div>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-6">
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-900">Software Engineer /
+                                            Automotive
+                                            Steering
+                                            Development</h3>
+                                        <p class="text-gray-600 italic text-sm">Robert Bosch, Germany/Vietnam |
+                                            12/17 -
+                                            09/18 |
+                                            Full-time</p>
+                                        <ul class="mt-2 text-gray-700 list-disc list-inside">
+                                            <li>Co-developed and deployed functional Auto Steering module</li>
+                                            <li>Streamlined development through comprehensive SWRE requirement
+                                                analysis.</li>
+                                            <li>Implemented robust CAN and UDS protocols</li>
+                                            <li>Achieved 100% test coverage with black and white box testing,
+                                                enhancing
+                                                code
+                                                quality.
+                                            </li>
+                                            <li>Ensured safety compliance with ASIL-D, MISRA, and ISO26262
+                                                standards.
+                                            </li>
+                                            <li>Built user-friendly GUI/CLI applications using Tkinter and Qt to
+                                                faciliate
+                                                configuration management.
+                                            </li>
+                                        </ul>
+
+                                        <div class="mt-2 flex flex-wrap gap-2">
+                                            <span
+                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">C</span>
+                                            <span
+                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Assembly</span>
+                                            <span
+                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Qt</span>
+                                            <span
+                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Canoe</span>
+                                            <span
+                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Canalyzer</span>
+                                            <span
+                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">CAPL</span>
+                                            <span
+                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Lauterbach
+                                                Debug</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Embedded Systems Engineer
+                                    </h3>
+                                    <p class="text-gray-600 italic text-sm">Fpt Software Co., Vietnam | 07/15 -
+                                        11/17 |
+                                        Full-time
+                                    </p>
+                                    <ul class="mt-2 text-gray-700 list-disc list-inside">
+                                        <li>Developed a high-performance Car Rear View Camera system, improving
+                                            driver
+                                            visibility by
+                                            20%</li>
+                                        <li>Optimized SPI and MCU drivers for iMX6, reducing latency by 15% on
+                                            baremetal
+                                            Linux
+                                        </li>
+                                        <li>Enhanced system reliability with AUTOSAR BSW drivers, cutting
+                                            failure
+                                            rates
+                                            by
+                                            10%
+                                        </li>
+                                        <li>Improved communication efficiency by 25% with AUTOSAR CAN and
+                                            Ethernet
+                                            drivers
+                                        </li>
+                                        <li>Automated build processes with a local CI pipeline, slashing
+                                            deployment
+                                            time
+                                            by
+                                            40%
+                                        </li>
+                                    </ul>
+                                    <p class="mt-2 text-gray-600 italic">Key Skills: iMX8, AUTOSAR, C++, Python,
+                                        Qt
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Field Maintenance Engineer
+                                    </h3>
+                                    <p class="text-gray-600 italic text-sm">General Motors, Egypt | 02/15 -
+                                        05/15 |
+                                        Full-time
+                                    </p>
+                                    <ul class="mt-2 text-gray-700 list-disc list-inside">
+                                        <li>Automated plant operations with PLC, increasing production uptime by
+                                            15%
+                                        </li>
+                                        <li>Integrated advanced sensors into production lines, boosting accuracy
+                                            by
+                                            20%
+                                        </li>
+                                        <li>Developed maintenance plans that reduced downtime by 25%, enhancing
+                                            plant
+                                            efficiency
+                                        </li>
+                                    </ul>
+                                    <p class="mt-2 text-gray-600 italic">Key Skills: PLC, Sensors, DCS</p>
+                                </div>
+                            </div>
             </section>
 
             <section class="bg-white p-6 rounded-xl shadow-sm mb-6">
