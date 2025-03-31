@@ -20,6 +20,21 @@ html, body {
     display: none !important;
 }
 
+/* Last updated text for print */
+.last-updated {
+    position: fixed !important;
+    bottom: 0.5cm !important;
+    right: 1cm !important;
+    writing-mode: horizontal-tb !important;
+    transform: none !important;
+}
+
+.last-updated p {
+    margin: 0 !important;
+    font-size: 7pt !important;
+    color: #666 !important;
+}
+
 /* Prevent page breaks inside elements */
 section {
     page-break-inside: avoid;
