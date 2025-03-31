@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="print.css" media="print">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-inter transition-colors duration-300">
@@ -30,7 +31,7 @@
                 </p>
             </header>
 
-            <section class="bg-white section-padding rounded-xl shadow-sm mb-section">
+            <section class="bg-white rounded-xl shadow-sm mb-section">
                 <h2 class="text-xl font-extrabold text-gray-900 mb-3">Summary</h2>
                 <div>
                     <p class="text-gray-700 mb-3">
@@ -64,7 +65,7 @@
                 </div>
             </section>
 
-            <section id="experience" class="bg-white section-padding rounded-xl shadow-sm mb-section">
+            <section id="experience" class="bg-white rounded-xl shadow-sm mb-section">
                 <h2 class="text-xl font-extrabold text-gray-900 mb-3">Experience</h2>
 
                 <div class="space-y-3">
@@ -133,11 +134,12 @@
                             <span class="tag">GTEST-GMOCK</span>
                             <span class="tag">JS</span>
                             <span class="tag">React</span>
+                            <span class="tag">Jinja2</span>
                         </div>
                     </div>
 
                     <div class="job-entry">
-                        <h3 class="text-lg font-semibold text-gray-900">Graduate Researcher / ExaHype2</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">Graduate Research Assistant / ExaHype2</h3>
                         <p class="text-gray-600 italic text-sm">Technische Universität München, Germany | 04/23 - 12/23
                             | Part-time</p>
                         <ul class="mt-2 text-gray-700 list-disc list-inside">
@@ -152,6 +154,7 @@
                             <span class="tag">CUDA</span>
                             <span class="tag">Perf</span>
                             <span class="tag">PDE</span>
+                            <span class="tag">Jinja2</span>
                             <span class="tag">Numerical Solvers</span>
                         </div>
                     </div>
@@ -176,10 +179,11 @@
                         <div class="mt-2 flex flex-wrap gap-2">
                             <span class="tag">C++14/17</span>
                             <span class="tag">Qt</span>
-                            <span class="tag">Bazek</span>
+                            <span class="tag">Bazel</span>
                             <span class="tag">ROS/ROS2</span>
                             <span class="tag">OpenGL</span>
                             <span class="tag">CUDA</span>
+                            <span class="tag">GTEST-GMOCK</span>
                             <span class="tag">AVX intrinsics SIMD</span>
                         </div>
                     </div>
@@ -248,7 +252,7 @@
                 </div>
             </section>
 
-            <section id="education" class="bg-white section-padding rounded-xl shadow-sm mb-section">
+            <section id="education" class="bg-white rounded-xl shadow-sm mb-section">
                 <h2 class="text-xl font-extrabold text-gray-900 mb-3">Education</h2>
                 <div class="space-y-3">
                     <div class="border-l-4 border-blue-500 pl-3">
@@ -275,7 +279,7 @@
                 </div>
             </section>
 
-            <section id="languages" class="bg-white section-padding rounded-xl shadow-sm">
+            <section id="languages" class="bg-white rounded-xl shadow-sm">
                 <h2 class="text-xl font-extrabold text-gray-900 mb-3">Languages</h2>
                 <ul class="text-gray-700 list-disc list-inside">
                     <li>Arabic: Native</li>
@@ -286,14 +290,15 @@
         </main>
     </div>
 
-    <button id="dark-mode-toggle"
-        class="fixed bottom-4 right-4 px-3 py-1 bg-gray-800 text-gray-100 rounded-full hover:bg-gray-700 transition-colors font-inter">
-        Toggle Dark Mode
+    <button id="dark-mode-toggle" class="theme-toggle">
+        <i class="ri-sun-line light-icon"></i>
+        <i class="ri-moon-line dark-icon"></i>
     </button>
 
     <script>
         document.getElementById('dark-mode-toggle').addEventListener('click', () => {
             document.body.classList.toggle('dark');
+            document.getElementById('dark-mode-toggle').classList.toggle('dark');
         });
     </script>
 </body>

@@ -7,7 +7,7 @@
     --section-bg: #ffffff;
     --tag-bg: #f3f4f6;
     --border-color: #e5e7eb;
-    --spacing-xs: 0.15rem;
+    --spacing-xs: 0.05rem;
     --spacing-sm: 0.3rem;
     --spacing-md: 0.5rem;
     --spacing-lg: 0.75rem;
@@ -145,6 +145,7 @@ aside {
 .text-lg {
     font-size: 1.125rem;
     line-height: 1.5;
+    margin: 0;
 }
 
 .text-sm {
@@ -294,8 +295,8 @@ aside {
 /* More compact job entries for better screen fit */
 .job-entry {
     margin-bottom: var(--spacing-xs);
-    padding: var(--spacing-xs);
-    border-radius: var(--spacing-xs);
+    padding: var(--spacing-md);
+    border-radius: var(--spacing-lg);
     transition: background-color 0.2s ease;
 }
 
@@ -437,7 +438,7 @@ section h2 {
     background-color: var(--tag-bg);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--spacing-sm);
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     display: inline-block;
     white-space: nowrap;
     transition: all 0.2s ease;
@@ -480,4 +481,60 @@ body.dark .tag {
 
 .mb-2 {
     margin-bottom: var(--spacing-xs);
+}
+
+/* Modern theme toggle */
+.theme-toggle {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #2d3748, #1a202c);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle.dark {
+    background: linear-gradient(145deg, #f7fafc, #cbd5e0);
+    color: #1a202c;
+}
+
+.theme-toggle i {
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle .light-icon {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.theme-toggle .dark-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.theme-toggle.dark .light-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.theme-toggle.dark .dark-icon {
+    opacity: 0;
+    transform: scale(0.5);
 }
