@@ -5,58 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Sam Fouad - CV</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="print.css" media="print">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: "Inter", sans-serif;
-            line-height: 1.6;
-        }
-
-        body.dark {
-            background-color: #2d2d2d;
-            color: #d4d4d4;
-        }
-
-        body.dark h1 {
-            color: #e5e5e5;
-        }
-
-        body.dark .bg-white {
-            background-color: #3a3a3a;
-        }
-
-        body.dark .text-gray-700 {
-            color: #d4d4d4;
-        }
-
-        body.dark .text-gray-600 {
-            color: #a1a1a1;
-        }
-
-        body.dark .bg-gray-100 {
-            background-color: #4a4a4a;
-        }
-
-        body.dark .text-gray-900 {
-            color: #e5e5e5;
-        }
-    </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800 font-inter transition-colors duration-300">
-    <div class="max-w-6xl mx-auto p-8 py-12">
+    <div class="max-w-6xl mx-auto p-uniform">
         <main>
-            <header class="mb-12 text-center">
-                <img src="pp.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+            <header class="mb-section text-center">
+                <img src="pp.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-2 object-cover">
                 <h1
-                    class="text-5xl font-extrabold text-gray-900 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+                    class="text-5xl font-extrabold text-gray-900 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mb-2">
                     Ahmed Sam Fouad
                 </h1>
-                <p class="text-xl text-gray-600 mt-2">Senior Software Engineer Specializing in HPC, Graphics, Numerics
-                    and AI
-                </p>
-                <p class="text-gray-500 text-sm mt-3">
+                <p class="text-xl text-gray-600 mb-2">Senior Software Engineer Specializing in HPC, Graphics, Numerics
+                    and AI</p>
+                <p class="text-gray-500 text-sm">
                     <a href="mailto:eng.a7med.sam@gmail.com" class="hover:text-gray-700">eng.a7med.sam@gmail.com</a> |
                     +49 160 57 54 511 |
                     <a href="https://github.com/A-Sam" class="hover:text-gray-700">github.com/A-Sam</a> |
@@ -65,10 +30,10 @@
                 </p>
             </header>
 
-            <section class="bg-white p-6 rounded-xl shadow-sm mb-6">
+            <section class="bg-white section-padding rounded-xl shadow-sm mb-section">
                 <h2 class="text-xl font-extrabold text-gray-900 mb-3">Summary</h2>
-                <div class="space-y-6">
-                    <p class="text-gray-700">
+                <div>
+                    <p class="text-gray-700 mb-3">
                         9+ years of experience in HPC, Graphics, and AI optimization.
                         Proven expertise in developing high-fidelity render engines, and designing safety-critical
                         automotive architectures and optimizing large AI models for edge computing. Extensive experience
@@ -78,51 +43,32 @@
                     </p>
 
                     <div class="flex flex-wrap gap-2 text-gray-700">
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">C++</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">Python</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">Qt</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">ROS/ROS2</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">CUDA</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">OpenMP</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">MPI</span>
-                        <span class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">AVX
-                            SIMD</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">Qualcomm
-                            HTP</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">OpenGL</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">HPC</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">ADAS</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">AUTOSAR</span>
-                        <span class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">Edge
-                            Computing</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">CI/CD</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">Jenkins</span>
-                        <span
-                            class="bg-gray-100 px-3 py-1 rounded-lg text-sm hover:bg-gray-200 transition-colors">Github
-                            Workflows</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Qt</span>
+                        <span class="tag">ROS/ROS2</span>
+                        <span class="tag">CUDA</span>
+                        <span class="tag">OpenMP</span>
+                        <span class="tag">MPI</span>
+                        <span class="tag">AVX SIMD</span>
+                        <span class="tag">Qualcomm HTP</span>
+                        <span class="tag">OpenGL</span>
+                        <span class="tag">HPC</span>
+                        <span class="tag">ADAS</span>
+                        <span class="tag">AUTOSAR</span>
+                        <span class="tag">Edge Computing</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">Github Workflows</span>
                     </div>
                 </div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-sm mb-6">
+            <section id="experience" class="bg-white section-padding rounded-xl shadow-sm mb-section">
                 <h2 class="text-xl font-extrabold text-gray-900 mb-3">Experience</h2>
 
-                <div class="space-y-6">
-                    <div>
+                <div class="space-y-3">
+                    <div class="job-entry">
                         <h3 class="text-lg font-semibold text-gray-900">Senior ML Optimization Engineer / Core AI</h3>
                         <p class="text-gray-600 italic text-sm">CARIAD, Volkswagen, Munich, Germany | 09/24 - Present |
                             Full-time</p>
@@ -139,307 +85,173 @@
                                 optimization</li>
                         </ul>
                         <div class="mt-2 flex flex-wrap gap-2">
-                            <span
-                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                C++</span>
-                            <span
-                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                Assembly</span>
-                            <span
-                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                VLIW</span>
-                            <span
-                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                QNN</span>
-                            <span
-                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                CUDA</span>
-                            <span
-                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                Qualcomm HTP</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Assembly</span>
+                            <span class="tag">VLIW</span>
+                            <span class="tag">QNN</span>
+                            <span class="tag">CUDA</span>
+                            <span class="tag">Qualcomm HTP</span>
                         </div>
                     </div>
 
+                    <div class="job-entry">
+                        <h3 class="text-lg font-semibold text-gray-900">Senior Software Engineer / HMI Infotainment
+                            Cluster</h3>
+                        <p class="text-gray-600 italic text-sm">CARIAD, Volkswagen, Munich, Germany | 03/22 - 08/24 |
+                            Full-time</p>
+                        <ul class="mt-2 text-gray-700 list-disc list-inside">
+                            <li>Architected and implemented robust HMI backend algorithms, optimizing HD complex maps
+                                data processing</li>
+                            <li>Implemented zero-copy inter-process communication using Iceoryx and low-latency RPC with
+                                Flatbuffers for the HMI abstraction backend module in Simulation-in-the-Loop (SiL)</li>
+                            <li>Reduced interface maintenance by 90% through automated interface generation pipeline
+                                using Jinja2 templates</li>
+                            <li>Optimized HMI backend performance, achieving 2x core kernel speedup and 30% memory
+                                footprint reduction via advanced C++ template meta-programming, enabling multi-target
+                                deployment and requiring significantly less maintenance</li>
+                            <li>Led development of HMI infotainment digital twin cluster initiative in Qt SDK</li>
+                            <li>Spearheaded dynamic ADAS HMI communication stack development, adopted across multiple
+                                projects</li>
+                            <li>Eliminated heavy and repetitive usage of interfaces adapters via lightweight proper
+                                variant interface decomposition</li>
+                            <li>Designed a unified HMI backend interface that statically carries predefined and compiled
+                                custom payloads between multiple customer functions</li>
+                            <li>Developed enabler tooling GUI apps to visually design a custom payload for the HMI
+                                interface using React SDK and React Flow</li>
+                            <li>Migrated the development environment from VM based development to local devhost inside
+                                WSL2 and docker devcontainers</li>
+                        </ul>
+                        <div class="mt-2 flex flex-wrap gap-2">
+                            <span class="tag">C++17</span>
+                            <span class="tag">QT</span>
+                            <span class="tag">AOS</span>
+                            <span class="tag">ROS</span>
+                            <span class="tag">Perf</span>
+                            <span class="tag">OpenMP</span>
+                            <span class="tag">SIMD</span>
+                            <span class="tag">Qualcomm</span>
+                            <span class="tag">GTEST-GMOCK</span>
+                            <span class="tag">JS</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
 
-                    <div class="space-y-6">
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">Senior Software Engineer / HMI
-                                Infotainment
-                                Cluster</h3>
-                            <p class="text-gray-600 italic text-sm">CARIAD, Volkswagen, Munich, Germany | 03/22
-                                - 08/24 |
-                                Full-time</p>
-                            <ul class="mt-2 text-gray-700 list-disc list-inside">
-                                <li>Architected and implemented robust HMI backend algorithms, optimizing HD complex
-                                    maps data processing</li>
-                                <li>Implemented zero-copy inter-process communication using Iceoryx and low-latency RPC
-                                    with Flatbuffers for the HMI abstraction backend module in Simulation-in-the-Loop
-                                    (SiL)</li>
-                                <li>Reduced interface maintenance by 90% through automated interface generation pipeline
-                                    using Jinja2 templates</li>
-                                <li>Optimized HMI backend performance, achieving 2x core kernel speedup and 30% memory
-                                    footprint reduction via advanced C++ template meta-programming, enabling
-                                    multi-target deployment and requiring significantly less maintenance </li>
-                                <li>Led development of HMI infotainment digital twin cluster initiative in Qt SDK</li>
-                                <li>Spearheaded dynamic ADAS HMI communication stack development, adopted across
-                                    multiple projects</li>
-                                <li>Eliminated heavy and repetitive usage of interfaces adapters via lightweight
-                                    proper variant interface decomposition.</li>
-                                <li>Designed a unified HMI backend interface that statically carries predefined and
-                                    compiled custom payloads between multiple customer functions</li>
-                                <li>Developed enabler tooling GUI apps to visually design a custom payload for the HMI
-                                    interface
-                                    using
-                                    React SDK and React Flow</li>
-                                <li>Migrated the development environment from VM based development to local devhost
-                                    inside WSL2 and docker devcontainers.</li>
-                            </ul>
+                    <div class="job-entry">
+                        <h3 class="text-lg font-semibold text-gray-900">Graduate Researcher / ExaHype2</h3>
+                        <p class="text-gray-600 italic text-sm">Technische Universität München, Germany | 04/23 - 12/23
+                            | Part-time</p>
+                        <ul class="mt-2 text-gray-700 list-disc list-inside">
+                            <li>Accelerated ExaHyPE Rusanov solver performance with CUDA-based Euler kernels, profiling
+                                the bandwidth bound problem, achieving near theoretical peak performance</li>
+                            <li>Improved GPU offloading efficiency for complex grid geometries using CUDA</li>
+                            <li>Achieved a 28x speedup over baseline OpenMP implementations</li>
+                        </ul>
+                        <div class="mt-2 flex flex-wrap gap-2">
+                            <span class="tag">C++20</span>
+                            <span class="tag">OpenMP</span>
+                            <span class="tag">CUDA</span>
+                            <span class="tag">Perf</span>
+                            <span class="tag">PDE</span>
+                            <span class="tag">Numerical Solvers</span>
+                        </div>
+                    </div>
 
-                            <div class="space-y-6">
-                                <div class="mt-2 flex flex-wrap gap-2">
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        C++17</span>
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        QT</span>
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        AOS</span>
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        ROS</span>
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        Perf</span>
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        OpenMP</span>
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        SIMD</span>
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        Qualcomm</span>
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        GTEST-GMOCK</span>
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        JS</span>
-                                    <span
-                                        class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">
-                                        React</span>
-                                </div>
+                    <div class="job-entry">
+                        <h3 class="text-lg font-semibold text-gray-900">Software Engineer / ADAS Simulation</h3>
+                        <p class="text-gray-600 italic text-sm">Altran Deutschland, Munich, Germany | 10/18 - 02/22 |
+                            Full-time</p>
+                        <ul class="mt-2 text-gray-700 list-disc list-inside">
+                            <li>Co-developed Linux Model Environment (LiME) server for robust ADAS sensor simulation
+                            </li>
+                            <li>Built LiME Juicer, a high-fidelity 3D environment rendering engine based on Open
+                                Simulation Interface (OSI)</li>
+                            <li>Integrated OSI, FMI, and ProtoBuff standards into LiME Juicer</li>
+                            <li>Design the multi-thread/multi-process render architecture for real-time steady 60 FPS
+                                Sensor data and point-cloud OSI payloads render engine using CUDA, OpenMP, MPI and
+                                OpenGL</li>
+                            <li>Achieved 6x rendering speedup through CUDA kernel optimization</li>
+                            <li>Developed reliable low-latency communication drivers using TCP/IP v4, SomeIP, FMU, and
+                                ZMQ</li>
+                        </ul>
+                        <div class="mt-2 flex flex-wrap gap-2">
+                            <span class="tag">C++14/17</span>
+                            <span class="tag">Qt</span>
+                            <span class="tag">Bazek</span>
+                            <span class="tag">ROS/ROS2</span>
+                            <span class="tag">OpenGL</span>
+                            <span class="tag">CUDA</span>
+                            <span class="tag">AVX intrinsics SIMD</span>
+                        </div>
+                    </div>
 
-                                <div class="space-y-6">
-                                    <div>
-                                        <h3 class="text-lg font-semibold text-gray-900">Graduate Researcher /
-                                            ExaHype2</h3>
-                                        <p class="text-gray-600 italic text-sm">Technische Universität München,
-                                            Germany |
-                                            04/23
-                                            -
-                                            12/23
-                                            | Part-time</p>
-                                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                                            <li>Accelerated ExaHyPE Rusanov solver performance with CUDA-based
-                                                Euler
-                                                kernels,
-                                                profiling
-                                                the bandwidth bound problem, achieving near theoretical peak
-                                                performance
-                                            </li>
-                                            <li>Improved GPU offloading efficiency for complex grid geometries
-                                                using CUDA
-                                            </li>
-                                            <li>Achieved a 28x speedup over baseline OpenMP implementations</li>
-                                        </ul>
-                                        <div class="mt-2 flex flex-wrap gap-2">
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">C++20</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">OpenMP</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">CUDA</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Perf</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">PDE</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Numerical
-                                                Solvers</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="job-entry">
+                        <h3 class="text-lg font-semibold text-gray-900">Software Engineer / Automotive Steering
+                            Development</h3>
+                        <p class="text-gray-600 italic text-sm">Robert Bosch, Germany/Vietnam | 12/17 - 09/18 |
+                            Full-time</p>
+                        <ul class="mt-2 text-gray-700 list-disc list-inside">
+                            <li>Developed and deployed functional Auto Steering module with comprehensive SWRE
+                                requirement analysis that is ASIL-D compliant</li>
+                            <li>Implemented robust CAN and UDS protocols with 100% test coverage</li>
+                            <li>Reviewed and maintained functional safety requirements and software for ASIL-D, MISRA,
+                                and ISO26262 standards</li>
+                            <li>Developed user-friendly GUI/CLI applications using Tkinter and Qt for configuration
+                                management and for automation of repetitive tasks</li>
+                        </ul>
+                        <div class="mt-2 flex flex-wrap gap-2">
+                            <span class="tag">C</span>
+                            <span class="tag">Assembly</span>
+                            <span class="tag">Qt</span>
+                            <span class="tag">Canoe</span>
+                            <span class="tag">Canalyzer</span>
+                            <span class="tag">CAPL</span>
+                            <span class="tag">Lauterbach Debug</span>
+                            <span class="tag">DOORS</span>
+                        </div>
+                    </div>
 
-                                <div class="space-y-6">
-                                    <div>
-                                        <h3 class="text-lg font-semibold text-gray-900">Software Engineer / ADAS
-                                            Simulation
-                                        </h3>
-                                        <p class="text-gray-600 italic text-sm">Altran Deutschland, Munich,
-                                            Germany |
-                                            10/18
-                                            -
-                                            02/22
-                                            |
-                                            Full-time</p>
-                                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                                            <li>Co-developed Linux Model Environment (LiME) server for robust ADAS
-                                                sensor simulation</li>
-                                            <li>Built LiME Juicer, a high-fidelity 3D environment rendering engine based
-                                                on Open Simulation Interface (OSI)</li>
-                                            <li>Integrated OSI, FMI, and ProtoBuff standards into LiME Juicer</li>
-                                            <li>Design the multi-thread/multi-process render architecture for real-time
-                                                steady 60 FPS Sensor data and point-cloud OSI payloads render engine
-                                                using CUDA, OpenMP, MPI and OpenGL
-                                            </li>
-                                            <li>Achieved 6x rendering speedup through CUDA kernel optimization</li>
-                                            <li>Developed reliable low-latency communication drivers using TCP/IP v4,
-                                                SomeIP, FMU, and ZMQ</li>
-                                        </ul>
+                    <div class="job-entry">
+                        <h3 class="text-lg font-semibold text-gray-900">Embedded Systems Engineer</h3>
+                        <p class="text-gray-600 italic text-sm">Fpt Software Co., Vietnam | 07/15 - 11/17 | Full-time
+                        </p>
+                        <ul class="mt-2 text-gray-700 list-disc list-inside">
+                            <li>Developed lightweight Car Rear View Camera driver</li>
+                            <li>Optimized SPI and MCU drivers for iMX6, reducing latency by 10% on baremetal x86_64
+                                Linux</li>
+                            <li>Migrated legacy modules to AUTOSAR BSW drivers</li>
+                        </ul>
+                        <div class="mt-2 flex flex-wrap gap-2">
+                            <span class="tag">C</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">NXP iMX8</span>
+                            <span class="tag">AUTOSAR</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
 
-                                        <div class="mt-2 flex flex-wrap gap-2">
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">C++14/17</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Qt</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Bazek</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">ROS/ROS2</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">OpenGL</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">CUDA</span>
-                                            <span
-                                                class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">AVX
-                                                intrinsics
-                                                SIMD</span>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="space-y-6">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-gray-900">Software Engineer /
-                                                Automotive
-                                                Steering
-                                                Development</h3>
-                                            <p class="text-gray-600 italic text-sm">Robert Bosch,
-                                                Germany/Vietnam |
-                                                12/17 -
-                                                09/18 |
-                                                Full-time</p>
-                                            <ul class="mt-2 text-gray-700 list-disc list-inside">
-                                                <li>Developed and deployed functional Auto Steering module with
-                                                    comprehensive SWRE requirement analysis that is ASIL-D compliant
-                                                </li>
-                                                <li>Implemented robust CAN and UDS protocols with 100% test coverage
-                                                </li>
-                                                <li>Reviewed and maintained functional safety requirements and software
-                                                    for ASIL-D, MISRA, and ISO26262 standards
-                                                </li>
-                                                <li>Developed user-friendly GUI/CLI applications using Tkinter and Qt
-                                                    for
-                                                    configuration management and for automation of repetitive tasks</li>
-                                            </ul>
-
-                                            <div class="mt-2 flex flex-wrap gap-2">
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">C</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Assembly</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Qt</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Canoe</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Canalyzer</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">CAPL</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Lauterbach
-                                                    Debug</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">DOORS</span>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="space-y-6">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-gray-900">Embedded Systems
-                                                Engineer
-                                            </h3>
-                                            <p class="text-gray-600 italic text-sm">Fpt Software Co., Vietnam |
-                                                07/15 -
-                                                11/17 |
-                                                Full-time
-                                            </p>
-                                            <ul class="mt-2 text-gray-700 list-disc list-inside">
-                                                <li>Developed lightweight Car Rear View Camera driver</li>
-                                                <li>Optimized SPI and MCU drivers for iMX6, reducing latency by 10% on
-                                                    baremetal x86_64 Linux</li>
-                                                <li>Migrated legacy modules to AUTOSAR BSW drivers</li>
-                                            </ul>
-                                            <div class="mt-2 flex flex-wrap gap-2">
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">C</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">C++</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">NXP
-                                                    iMX8</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">AUTOSAR</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Python</span>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="space-y-6">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-gray-900">Field Maintenance
-                                                Engineer
-                                            </h3>
-                                            <p class="text-gray-600 italic text-sm">General Motors, Egypt |
-                                                02/15 -
-                                                05/15 |
-                                                Full-time
-                                            </p>
-                                            <ul class="mt-2 text-gray-700 list-disc list-inside">
-                                                <li>Maintained plant operations in PLC and developed efficient
-                                                    maintenance plans
-                                                    to reduce production downtime</li>
-                                                <li>Proposed and implemented IP to integrate advanced sensors into
-                                                    production lines, improving ergonomics and safety</li>
-                                            </ul>
-                                            <div class="mt-2 flex flex-wrap gap-2">
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">PLC</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Fuzzy
-                                                    Logic</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">Python</span>
-                                                <span
-                                                    class="bg-gray-100 px-3 py-1 rounded-lg text-gray-700 text-sm hover:bg-gray-200 transition-colors">SolidWorks</span>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="job-entry">
+                        <h3 class="text-lg font-semibold text-gray-900">Field Maintenance Engineer</h3>
+                        <p class="text-gray-600 italic text-sm">General Motors, Egypt | 02/15 - 05/15 | Full-time</p>
+                        <ul class="mt-2 text-gray-700 list-disc list-inside">
+                            <li>Maintained plant operations in PLC and developed efficient maintenance plans to reduce
+                                production downtime</li>
+                            <li>Proposed and implemented IP to integrate advanced sensors into production lines,
+                                improving ergonomics and safety</li>
+                        </ul>
+                        <div class="mt-2 flex flex-wrap gap-2">
+                            <span class="tag">PLC</span>
+                            <span class="tag">Fuzzy Logic</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">SolidWorks</span>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-sm mb-6">
-                <h2 class="text-xl font-extrabold text-gray-900 mb-4">Education</h2>
-                <div class="space-y-6">
-                    <div class="border-l-4 border-blue-500 pl-4">
+            <section id="education" class="bg-white section-padding rounded-xl shadow-sm mb-section">
+                <h2 class="text-xl font-extrabold text-gray-900 mb-3">Education</h2>
+                <div class="space-y-3">
+                    <div class="border-l-4 border-blue-500 pl-3">
                         <h3 class="text-lg font-semibold text-gray-900">M.Sc. Computational Science and Engineering
                             (Part-time)</h3>
                         <p class="text-gray-600 italic text-sm">Technical University of Munich, Germany | 10/20 - 09/25
@@ -447,13 +259,13 @@
                         <p class="text-gray-700 mt-1">Specialized in HPC, High Dimensional Data Reduction, Deep
                             Learning, and Scientific Computing</p>
                     </div>
-                    <div class="border-l-4 border-green-500 pl-4">
+                    <div class="border-l-4 border-green-500 pl-3">
                         <h3 class="text-lg font-semibold text-gray-900">B.Sc. Mechatronics Engineering</h3>
                         <p class="text-gray-600 italic text-sm">Ain Shams University, Egypt | 09/07 - 06/13 | GPA:
                             2.7/4.0</p>
                         <p class="text-gray-700 mt-1">With graduation project GPA of 4.0/4.0.</p>
                     </div>
-                    <div class="border-l-4 border-green-500 pl-4">
+                    <div class="border-l-4 border-green-500 pl-3">
                         <h3 class="text-lg font-semibold text-gray-900">Secondary School - Natural Sciences</h3>
                         <p class="text-gray-600 italic text-sm">Al-Shati Secondary School, Saudi Arabia | 09/04 - 06/07
                             | GPA: 3.9/4.0</p>
@@ -463,7 +275,7 @@
                 </div>
             </section>
 
-            <section class="bg-white p-6 rounded-xl shadow-sm">
+            <section id="languages" class="bg-white section-padding rounded-xl shadow-sm">
                 <h2 class="text-xl font-extrabold text-gray-900 mb-3">Languages</h2>
                 <ul class="text-gray-700 list-disc list-inside">
                     <li>Arabic: Native</li>
@@ -475,7 +287,7 @@
     </div>
 
     <button id="dark-mode-toggle"
-        class="fixed bottom-6 right-6 px-4 py-2 bg-gray-800 text-gray-100 rounded-full hover:bg-gray-700 transition-colors">
+        class="fixed bottom-4 right-4 px-3 py-1 bg-gray-800 text-gray-100 rounded-full hover:bg-gray-700 transition-colors font-inter">
         Toggle Dark Mode
     </button>
 
