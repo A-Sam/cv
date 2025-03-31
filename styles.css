@@ -1,12 +1,15 @@
 /* Custom styles for modernity and pure grey dark mode */
 :root {
     --font-family: "Inter", sans-serif;
-    --bg-color: #f9fafb;
-    --text-color: #1f2937;
-    --heading-color: #111827;
-    --section-bg: #ffffff;
-    --tag-bg: #f3f4f6;
-    --border-color: #e5e7eb;
+    
+    /* Shadcn light mode colors */
+    --bg-color: hsl(0, 0%, 100%);
+    --text-color: hsl(240, 10%, 3.9%);
+    --heading-color: hsl(240, 6%, 10%);
+    --section-bg: hsl(0, 0%, 100%);
+    --tag-bg: hsl(240, 5%, 96%);
+    --border-color: hsl(240, 6%, 90%);
+    
     --spacing-xs: 0.05rem;
     --spacing-sm: 0.3rem;
     --spacing-md: 0.5rem;
@@ -15,8 +18,53 @@
     --spacing-2xl: 1.5rem;
     --uniform-padding: 0.5rem;
     --section-inner-padding: 1rem;
-    --link-color: #3b82f6;
-    --link-hover-color: #2563eb;
+    --link-color: hsl(221, 83%, 53%);
+    --link-hover-color: hsl(221, 83%, 59%);
+    
+    /* Shadcn color scheme */
+    --shadcn-bg: hsl(0, 0%, 100%);
+    --shadcn-fg: hsl(240, 10%, 3.9%);
+    --shadcn-card: hsl(0, 0%, 100%);
+    --shadcn-card-fg: hsl(240, 10%, 3.9%);
+    --shadcn-primary: hsl(240, 5.9%, 10%);
+    --shadcn-primary-fg: hsl(0, 0%, 98%);
+    --shadcn-secondary: hsl(240, 4.8%, 95.9%);
+    --shadcn-secondary-fg: hsl(240, 5.9%, 10%);
+    --shadcn-muted: hsl(240, 4.8%, 95.9%);
+    --shadcn-muted-fg: hsl(240, 3.8%, 46.1%);
+    --shadcn-accent: hsl(240, 4.8%, 95.9%);
+    --shadcn-accent-fg: hsl(240, 5.9%, 10%);
+    --shadcn-border: hsl(240, 5.9%, 90%);
+    --shadcn-ring: hsl(240, 5.9%, 10%);
+}
+
+body.dark, html.dark {
+    /* Shadcn dark mode colors */
+    --bg-color: hsl(240, 10%, 3.9%);
+    --text-color: hsl(0, 0%, 98%);
+    --heading-color: hsl(0, 0%, 98%);
+    --section-bg: hsl(240, 6%, 10%);
+    --tag-bg: hsl(240, 4%, 16%);
+    --border-color: hsl(240, 4%, 16%);
+    
+    /* Shadcn dark mode colors */
+    --shadcn-bg: hsl(240, 10%, 3.9%);
+    --shadcn-fg: hsl(0, 0%, 98%);
+    --shadcn-card: hsl(240, 10%, 3.9%);
+    --shadcn-card-fg: hsl(0, 0%, 98%);
+    --shadcn-primary: hsl(0, 0%, 98%);
+    --shadcn-primary-fg: hsl(240, 5.9%, 10%);
+    --shadcn-secondary: hsl(240, 3.7%, 15.9%);
+    --shadcn-secondary-fg: hsl(0, 0%, 98%);
+    --shadcn-muted: hsl(240, 3.7%, 15.9%);
+    --shadcn-muted-fg: hsl(240, 5%, 64.9%);
+    --shadcn-accent: hsl(240, 3.7%, 15.9%);
+    --shadcn-accent-fg: hsl(0, 0%, 98%);
+    --shadcn-border: hsl(240, 3.7%, 15.9%);
+    --shadcn-ring: hsl(240, 4.9%, 83.9%);
+    
+    --link-color: hsl(217, 91%, 60%);
+    --link-hover-color: hsl(214, 100%, 77%);
 }
 
 body {
@@ -26,44 +74,68 @@ body {
     color: var(--text-color);
 }
 
+/* Heading with gradient styles */
+.dark-heading {
+    background-image: linear-gradient(to right, hsl(210, 40%, 98%), hsl(210, 20%, 80%)) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+html:not(.dark) h1 {
+    background-image: linear-gradient(to right, hsl(220, 14%, 10%), hsl(220, 14%, 30%)) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
 .font-inter {
     font-family: var(--font-family);
 }
 
-/* Dark mode with pure grey tones */
-body.dark {
-    --bg-color: #2d2d2d;
-    --text-color: #d4d4d4;
-    --heading-color: #e5e5e5;
-    --section-bg: #3a3a3a;
-    --tag-bg: #4a4a4a;
-    --border-color: #555555;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+/* Section styling */
+section {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: var(--section-inner-padding);
+    background-color: var(--section-bg);
+    border: 1px solid var(--border-color);
 }
 
-body.dark h1 {
+section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: var(--spacing-lg);
     color: var(--heading-color);
 }
 
-body.dark .bg-white {
-    background-color: var(--section-bg);
+/* Text colors for dark mode */
+body.dark h1, body.dark h2, body.dark h3 {
+    color: var(--heading-color);
 }
 
 body.dark .text-gray-700 {
-    color: #d4d4d4;
+    color: var(--text-color);
 }
 
 body.dark .text-gray-600 {
-    color: #a1a1a1;
-}
-
-body.dark .bg-gray-100 {
-    background-color: var(--tag-bg);
+    color: hsl(240, 5%, 64.9%);
 }
 
 body.dark .text-gray-900 {
     color: var(--heading-color);
+}
+
+body.dark .text-gray-500 {
+    color: hsl(240, 5%, 54.9%);
+}
+
+body.dark .bg-white {
+    background-color: var(--section-bg);
 }
 
 /* Sticky skills column */
@@ -301,6 +373,7 @@ aside {
     padding: var(--spacing-md);
     border-radius: var(--spacing-lg);
     transition: background-color 0.2s ease;
+    border: 1px solid var(--border-color);
 }
 
 .job-entry:hover {
@@ -308,11 +381,11 @@ aside {
 }
 
 body.dark .job-entry:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.03);
 }
 
 .job-entry h3 {
-    margin-bottom: 0.15rem;
+    color: var(--heading-color);
 }
 
 /* Padding and shadow */
@@ -372,23 +445,6 @@ body.dark a.text-blue-600 {
 
 body.dark a.text-blue-600:hover {
     color: #93c5fd;
-}
-
-/* Section styling */
-section {
-    border-radius: 0.75rem;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    padding: var(--section-inner-padding);
-}
-
-section:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-section h2 {
-    margin-bottom: var(--spacing-lg);
 }
 
 /* Button */
@@ -465,11 +521,12 @@ section h2 {
     display: inline-block;
     white-space: nowrap;
     transition: all 0.2s ease;
+    color: var(--text-color);
 }
 
 .tag:hover {
     transform: translateY(-1px);
-    background-color: #e5e7eb;
+    background-color: var(--shadcn-accent);
 }
 
 body.dark .tag {
@@ -506,7 +563,7 @@ body.dark .tag {
     margin-bottom: var(--spacing-xs);
 }
 
-/* Modern theme toggle */
+/* Action buttons */
 .action-buttons {
     position: fixed;
     bottom: 1.5rem;
@@ -521,64 +578,36 @@ body.dark .tag {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background: linear-gradient(145deg, #2c2c2c, #1e1e1e);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: var(--shadcn-secondary);
+    color: var(--shadcn-secondary-fg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
+    border: 1px solid var(--shadcn-border);
     cursor: pointer;
-    transition: all 0.3s ease;
-    color: white;
+    transition: all 0.2s ease;
     font-size: 1.25rem;
+    position: relative;
 }
 
 .action-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(145deg, #333333, #252525);
+    transform: translateY(-2px);
+    background: var(--shadcn-accent);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 body.dark .action-button {
-    background: linear-gradient(145deg, #2c2c2c, #1e1e1e);
+    background: var(--shadcn-secondary);
+    color: var(--shadcn-secondary-fg);
+    border-color: var(--shadcn-border);
 }
 
 body.dark .action-button:hover {
-    background: linear-gradient(145deg, #333333, #252525);
+    background: var(--shadcn-accent);
 }
 
-.theme-toggle {
-    position: relative;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: linear-gradient(145deg, #2c2c2c, #1e1e1e);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 1.25rem;
-}
-
-.theme-toggle:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(145deg, #333333, #252525);
-}
-
-.theme-toggle.dark {
-    background: linear-gradient(145deg, #e0e0e0, #cccccc);
-    color: #1a1a1a;
-}
-
-.theme-toggle.dark:hover {
-    background: linear-gradient(145deg, #e6e6e6, #d4d4d4);
-}
-
+/* Theme toggle specific - handles icon animation */
 .theme-toggle i {
     position: absolute;
     transition: all 0.3s ease;
