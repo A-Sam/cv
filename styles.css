@@ -522,6 +522,7 @@ body.dark a.text-blue-600:hover {
     white-space: nowrap;
     transition: all 0.2s ease;
     color: var(--text-color);
+    border: none;
 }
 
 .tag:hover {

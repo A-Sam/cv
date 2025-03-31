@@ -109,7 +109,6 @@ li {
 /* Tag styling */
 .tag, .bg-gray-100 {
     background-color: white !important;
-    border: 1px solid #ddd !important;
     padding: 0.02cm 0.08cm !important;
     margin: 0.02cm !important;
     font-size: 7pt !important;
