@@ -11,18 +11,18 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-50 text-gray-800 font-inter transition-colors duration-300">
+<body class="dark bg-gray-50 text-gray-800 font-inter transition-colors duration-300">
     <div class="max-w-6xl mx-auto p-uniform">
         <main>
             <header class="mb-section text-center">
-                <img src="pp.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-2 object-cover">
+                <img src="pp.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto object-cover">
                 <h1
-                    class="text-5xl font-extrabold text-gray-900 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mb-2">
+                    class="text-5xl font-extrabold text-gray-900 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent mb-2 mt-2">
                     Ahmed Sam Fouad
                 </h1>
                 <p class="text-xl text-gray-600 mb-2">Senior Software Engineer Specializing in HPC, Graphics, Numerics
                     and AI</p>
-                <p class="text-gray-500 text-sm">
+                <p class="text-gray-500 text-sm mb-3">
                     <a href="mailto:eng.a7med.sam@gmail.com" class="hover:text-gray-700">eng.a7med.sam@gmail.com</a> |
                     +49 160 57 54 511 |
                     <a href="https://github.com/A-Sam" class="hover:text-gray-700">github.com/A-Sam</a> |
@@ -31,7 +31,7 @@
                 </p>
             </header>
 
-            <section class="bg-white rounded-xl shadow-sm mb-section">
+            <section class="bg-white rounded-xl shadow-sm mb-section" style=" margin-top: 2rem;">
                 <h2 class="text-xl font-extrabold text-gray-900 mb-3">Summary</h2>
                 <div>
                     <p class="text-gray-700 mb-3">
@@ -61,6 +61,8 @@
                         <span class="tag">CI/CD</span>
                         <span class="tag">Jenkins</span>
                         <span class="tag">Github Workflows</span>
+                        <span class="tag">Containerization</span>
+                        <span class="tag">docker</span>
                     </div>
                 </div>
             </section>
@@ -91,6 +93,7 @@
                             <span class="tag">VLIW</span>
                             <span class="tag">QNN</span>
                             <span class="tag">CUDA</span>
+                            <span class="tag">ONNX</span>
                             <span class="tag">Qualcomm HTP</span>
                         </div>
                     </div>
@@ -147,6 +150,9 @@
                                 the bandwidth bound problem, achieving near theoretical peak performance</li>
                             <li>Improved GPU offloading efficiency for complex grid geometries using CUDA</li>
                             <li>Achieved a 28x speedup over baseline OpenMP implementations</li>
+                            <li><a href="https://mediatum.ub.tum.de/doc/1726231/fmn8ps2ehx36eu7aum6ia8o94.GR_CUDA_SS23_AhmedFouad.pdf"
+                                    target="_blank" class="text-blue-600 hover:underline">Optimizing GPU Offloading with
+                                    CUDA for a Patch-based Hyperbolic Finite Volume Solver in ExaHyPE</a></li>
                         </ul>
                         <div class="mt-2 flex flex-wrap gap-2">
                             <span class="tag">C++20</span>
@@ -290,15 +296,59 @@
         </main>
     </div>
 
-    <button id="dark-mode-toggle" class="theme-toggle">
-        <i class="ri-sun-line light-icon"></i>
-        <i class="ri-moon-line dark-icon"></i>
-    </button>
+    <div class="action-buttons">
+        <button id="print-button" class="action-button" title="Print CV">
+            <i class="ri-printer-line"></i>
+        </button>
+        <button id="share-button" class="action-button" title="Share CV">
+            <i class="ri-share-line"></i>
+        </button>
+        <button id="dark-mode-toggle" class="theme-toggle dark">
+            <i class="ri-sun-line light-icon"></i>
+            <i class="ri-moon-line dark-icon"></i>
+        </button>
+    </div>
 
     <script>
+        // Set dark mode by default
+        document.addEventListener('DOMContentLoaded', function () {
+            // Already set in the HTML class, but ensure it's active
+            document.body.classList.add('dark');
+            document.getElementById('dark-mode-toggle').classList.add('dark');
+        });
+
         document.getElementById('dark-mode-toggle').addEventListener('click', () => {
             document.body.classList.toggle('dark');
             document.getElementById('dark-mode-toggle').classList.toggle('dark');
+        });
+
+        // Add print functionality
+        document.getElementById('print-button').addEventListener('click', () => {
+            window.print();
+        });
+
+        // Add share functionality
+        document.getElementById('share-button').addEventListener('click', () => {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Ahmed Sam Fouad - CV',
+                    url: window.location.href
+                }).catch(err => {
+                    console.error('Share failed:', err);
+                });
+            } else {
+                // Fallback - copy to clipboard
+                const dummy = document.createElement('input');
+                document.body.appendChild(dummy);
+                document.body.appendChild(dummy);
+                dummy.value = window.location.href;
+                dummy.select();
+                document.execCommand('copy');
+                document.body.removeChild(dummy);
+
+                // Show a tooltip or notification
+                alert('URL copied to clipboard!');
+            }
         });
     </script>
 </body>
