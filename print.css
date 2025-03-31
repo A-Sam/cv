@@ -28,8 +28,8 @@ section {
     box-shadow: none !important;
     border: none !important;
     border-bottom: 1px solid #eee !important;
-    margin: 0.4cm 0 !important;
-    padding: 0.3cm 0 !important;
+    margin: 0.3cm 0 !important;
+    padding: 0.2cm 0 !important;
 }
 
 /* Allow breaking in experience section */
@@ -41,20 +41,20 @@ section#experience {
 /* Optimize container width */
 .max-w-6xl {
     max-width: 100% !important;
-    padding: 0.5cm !important;
+    padding: 0.3cm !important;
     margin: 0 !important;
 }
 
 /* Reset all padding and margins for print */
 .p-8, .p-6, .py-12, .p-uniform {
-    padding: 0.25cm !important;
+    padding: 0.2cm !important;
 }
 
 /* Optimize header */
 header {
-    margin-bottom: 0.5cm !important;
+    margin-bottom: 0.3cm !important;
     text-align: center !important;
-    padding-top: 0.5cm !important;
+    padding-top: 0.3cm !important;
 }
 
 /* Optimize profile picture */
@@ -94,15 +94,15 @@ p {
 
 /* Nested elements */
 ul {
-    margin: 0.1cm 0 0.2cm 0.25cm !important;
+    margin: 0.08cm 0 0.15cm 0.2cm !important;
     padding: 0 !important;
 }
 
 li {
-    margin-bottom: 0.1cm !important;
+    margin-bottom: 0.08cm !important;
     page-break-inside: avoid;
     break-inside: avoid;
-    line-height: 1.2 !important;
+    line-height: 1.15 !important;
     font-size: 10pt !important;
 }
 
@@ -110,10 +110,11 @@ li {
 .tag, .bg-gray-100 {
     background-color: white !important;
     border: 1px solid #ddd !important;
-    padding: 0.05cm 0.1cm !important;
-    margin: 0.05cm !important;
-    font-size: 8pt !important;
+    padding: 0.02cm 0.08cm !important;
+    margin: 0.02cm !important;
+    font-size: 7pt !important;
     display: inline-block !important;
+    line-height: 1.2 !important;
 }
 
 /* Links */
@@ -140,12 +141,12 @@ a.text-blue-600 {
 
 /* Optimize spacing between job entries */
 .space-y-6 > *, .space-y-3 > * {
-    margin-top: 0.2cm !important;
+    margin-top: 0.15cm !important;
 }
 
 /* Make skills tags more compact */
 .gap-2 {
-    gap: 0.1cm !important;
+    gap: 0.05cm !important;
 }
 
 .mt-2 {
@@ -193,19 +194,19 @@ a.text-blue-600 {
 .job-entry {
     page-break-inside: auto !important;
     break-inside: auto !important;
-    padding: 0.15cm 0 !important;
-    margin-bottom: 0.2cm !important;
+    padding: 0.1cm 0 !important;
+    margin-bottom: 0.15cm !important;
     border-bottom: 1px dotted #eee !important;
 }
 
 /* Optimize specific sections to fit in 2 pages */
 #summary {
-    margin-bottom: 0.3cm !important;
+    margin-bottom: 0.2cm !important;
 }
 
 #education, #languages {
-    margin-top: 0.3cm !important;
-    padding-top: 0.2cm !important;
+    margin-top: 0.2cm !important;
+    padding-top: 0.15cm !important;
 }
 
 /* Ensure languages section stays together */
@@ -216,10 +217,11 @@ a.text-blue-600 {
 
 /* Make summary more compact */
 #summary p {
-    margin-bottom: 0.15cm !important;
+    margin-bottom: 0.1cm !important;
 }
 
 /* Compact skills tags display */
 .flex-wrap {
-    row-gap: 0.1cm !important;
+    row-gap: 0.05cm !important;
+    column-gap: 0.05cm !important;
 } 
