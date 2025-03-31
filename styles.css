@@ -38,3 +38,117 @@ body.dark .text-gray-900 {
 aside {
     min-width: 200px;
 }
+
+/* Print styles for A4 paper */
+@media print {
+    /* Reset page margins and size */
+    @page {
+        size: A4;
+        margin: 1.5cm;
+    }
+
+    /* Hide dark mode toggle button */
+    #dark-mode-toggle {
+        display: none;
+    }
+
+    /* Ensure proper page breaks */
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Optimize container width for A4 */
+    .max-w-6xl {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* Ensure proper spacing */
+    .p-8 {
+        padding: 0 !important;
+    }
+
+    .py-12 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    /* Optimize header for print */
+    header {
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Adjust profile picture size for print */
+    .w-32 {
+        width: 100px !important;
+    }
+
+    .h-32 {
+        height: 100px !important;
+    }
+
+    /* Optimize section spacing */
+    .mb-6 {
+        margin-bottom: 1rem !important;
+    }
+
+    .mb-12 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Ensure proper text colors in print */
+    .text-gray-700,
+    .text-gray-600,
+    .text-gray-900 {
+        color: #000000 !important;
+    }
+
+    /* Optimize background colors for print */
+    .bg-white {
+        background-color: #ffffff !important;
+    }
+
+    .bg-gray-100 {
+        background-color: #f3f4f6 !important;
+    }
+
+    /* Ensure proper link colors */
+    a {
+        color: #000000 !important;
+        text-decoration: none !important;
+    }
+
+    /* Optimize font sizes for print */
+    .text-5xl {
+        font-size: 2rem !important;
+    }
+
+    .text-xl {
+        font-size: 1.25rem !important;
+    }
+
+    .text-lg {
+        font-size: 1.125rem !important;
+    }
+
+    /* Ensure proper spacing in lists */
+    .list-disc {
+        margin-left: 1.5rem !important;
+    }
+
+    /* Optimize tag spacing */
+    .gap-2 {
+        gap: 0.5rem !important;
+    }
+
+    .px-3 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
+    .py-1 {
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
+    }
+}
