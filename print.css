@@ -142,6 +142,11 @@ a.text-blue-600 {
     text-decoration: underline !important;
 }
 
+.wh-1 {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
 /* Remove shadows and rounded corners */
 .shadow-sm, .rounded-xl, .rounded-lg {
     box-shadow: none !important;
