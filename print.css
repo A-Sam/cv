@@ -121,6 +121,11 @@ li {
     font-size: 10pt !important;
 }
 
+.icons {
+    width: 0 !important;
+    height: 0 !important;
+}
+
 /* Tag styling */
 .tag, .bg-gray-100 {
     background-color: white !important;
@@ -140,11 +145,6 @@ a {
 a.text-blue-600 {
     font-weight: bold !important;
     text-decoration: underline !important;
-}
-
-.wh-1 {
-	height: 1.5rem;
-	width: 1.5rem;
 }
 
 /* Remove shadows and rounded corners */
