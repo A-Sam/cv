@@ -311,6 +311,11 @@ aside {
     height: 8rem;
 }
 
+.wh-1 {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
 .rounded-full {
     border-radius: 9999px;
 }
