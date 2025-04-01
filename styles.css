@@ -531,8 +531,8 @@ body.dark a.text-blue-600:hover {
 }
 
 .icons {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.0rem !important;
+    height: 1.0rem !important;
 }
 
 .tag:hover {
