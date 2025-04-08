@@ -130,23 +130,6 @@
                         </div>
                     </div>
                     </ul>
-                    <div class="mt-2 flex flex-wrap gap-2">
-                        <span class="tag">C++17/20</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Assembly</span>
-                        <span class="tag">VLIW</span>
-                        <span class="tag">QNN</span>
-                        <span class="tag">CUDA</span>
-                        <span class="tag">ONNX</span>
-                        <span class="tag">Qualcomm HTP</span>
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">Pytorch</span>
-                        <span class="tag">Microbenchmarking</span>
-                        <span class="tag">CNN Vision Models</span>
-                        <span class="tag">NCCL</span>
-                        <span class="tag">TVM</span>
-                        <span class="tag">XLA</span>
-                    </div>
 
                     <div class="job-entry">
                         <h3 class="text-lg font-semibold">Senior Software Engineer / HMI Infotainment Cluster</h3>
@@ -304,97 +287,101 @@
 
             <section id="projects" class="rounded-xl shadow-sm mb-section">
                     <h2 class="text-xl font-extrabold mb-3">Projects</h2>
-                    <div class="job-entry">
-                        <h3 class="text-lg font-semibold">Tab Tag Tree - Chrome Extension</h3>
-                        <p class="italic text-sm">Personal Project | <a
-                                href="https://chromewebstore.google.com/detail/tab-tag-tree/lnlodalopnihdjkilbkpijndkddfoemc"
-                                class="text-blue-600">Chrome Store</a></p>
-                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                            <li>Chrome extension for efficient tab management using tags and tree structure</li>
-                            <li>Built with TypeScript, React, and Chrome Extension APIs</li>
-                        </ul>
-                        <div class="mt-2 flex flex-wrap gap-2">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Chrome API</span>
-                            <span class="tag">SQLite</span>
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
+                    <div class="space-y-3">
+                        <div class="job-entry">
+                            <h3 class="text-lg font-semibold">Tab Tag Tree - Chrome Extension</h3>
+                            <p class="italic text-sm">Personal Project | <a
+                                    href="https://chromewebstore.google.com/detail/tab-tag-tree/lnlodalopnihdjkilbkpijndkddfoemc"
+                                    class="text-blue-600">Chrome Store</a></p>
+                            <ul class="mt-2 text-gray-700 list-disc list-inside">
+                                <li>Chrome extension for efficient tab management using tags and tree structure</li>
+                                <li>Built with TypeScript, React, and Chrome Extension APIs</li>
+                            </ul>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Chrome API</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="job-entry">
-                        <h3 class="text-lg font-semibold">Distributed ONNX Training with NCCL</h3>
-                        <p class="italic text-sm">Personal Project | 10/24 - Present</p>
-                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                            <li>Developed a proof-of-concept for distributed training of an ONNX-based CNN model across two GPUs
-                                using NCCL’s AllReduce and Broadcast operations</li>
-                            <li>Achieved 1.8x speedup over single-GPU baseline by optimizing inter-GPU networking with NCCL over NVLink</li>
-                        </ul>
-                        <div class="mt-2 flex flex-wrap gap-2">
-                            <span class="tag">Python</span>
-                            <span class="tag">Pytorch</span>
-                            <span class="tag">ONNX</span>
-                            <span class="tag">NCCL</span>
-                            <span class="tag">CUDA</span>
+                        <div class="job-entry">
+                            <h3 class="text-lg font-semibold">Distributed ONNX Training with NCCL</h3>
+                            <p class="italic text-sm">Personal Project | 09/23</p>
+                            <ul class="mt-2 text-gray-700 list-disc list-inside">
+                                <li>Developed a PoC for distributed training of an ONNX-based CNN model across two local GPUs
+                                    using NCCL’s AllReduce and Broadcast ops</li>
+                                <li>Achieved ~1.5x speedup over single-GPU baseline by optimizing inter-GPU networking with NCCL over NVLink</li>
+                            </ul>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pytorch</span>
+                                <span class="tag">ONNX</span>
+                                <span class="tag">NCCL</span>
+                                <span class="tag">CUDA</span>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="job-entry">
-                        <h3 class="text-lg font-semibold">TVM and XLA Optimization for TPU-Accelerated Inference proto</h3>
-                        <p class="italic text-sm">TUM | Advanced Computer Architecture Seminar | 02/23</p>
-                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                            <li>Experimented with TVM and XLA to compile and optimize an ONNX-based transformer model for TPU inference, integrating PyTorch with XLA’s JIT compilation</li>
-                            <li>Used AutoTVM to tune convolution kernels and XLA to fuse tensor operations, reducing inference latency improving throughput by 10% compared to baseline ONNX runtime</li>
-                        </ul>
-                        <div class="mt-2 flex flex-wrap gap-2">
-                            <span class="tag">Python</span>
-                            <span class="tag">Pytorch</span>
-                            <span class="tag">ONNX</span>
-                            <span class="tag">TVM</span>
-                            <span class="tag">XLA</span>
-                            <span class="tag">Microbenchmarking</span>
+                
+                        <div class="job-entry">
+                            <h3 class="text-lg font-semibold">TVM and XLA Optimization for TPU-Accelerated Inference proto</h3>
+                            <p class="italic text-sm">TUM | Advanced Computer Architecture Seminar | 02/23</p>
+                            <ul class="mt-2 text-gray-700 list-disc list-inside">
+                                <li>Developed a demo using TVM and XLA to compile and optimize an ONNX model for edge HW inference in runtime (Google's TPU), integrating PyTorch with XLA’s JIT compilation</li>
+                                <li>Used AutoTVM to tune convolution kernels and XLA to fuse tensor operations, reducing inference latency improving throughput by 10% compared to baseline ONNX runtime</li>
+                            </ul>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="tag">Python</span>
+                                <span class="tag">Pytorch</span>
+                                <span class="tag">ONNX</span>
+                                <span class="tag">TVM</span>
+                                <span class="tag">XLA</span>
+                                <span class="tag">Microbenchmarking</span>
+                            </div>
                         </div>
                     </div>
             </section>
 
             <section id="projects" class="rounded-xl shadow-sm mb-section">
                 <h2 class="text-xl font-extrabold mb-3">Publications</h2>
-                <div class="job-entry">
-                    <h3 class="text-lg font-semibold">Guided Research</h3>
-                    <p class="italic text-sm">TUM | <a
-                            href="https://mediatum.ub.tum.de/doc/1726231/fmn8ps2ehx36eu7aum6ia8o94.GR_CUDA_SS23_AhmedFouad.pdf"
-                                    target="_blank" class="text-blue-600 hover:underline"
-                            class="text-blue-600">Optimizing GPU Offloading with CUDA for a Patch-based Hyperbolic Finite Volume Solver in ExaHyPE</a></p>
-                    <div class="mt-2 flex flex-wrap gap-2">
-                        <span class="tag">CUDA</span>
-                        <span class="tag">PTX</span>
-                        <span class="tag">Microbenchmarking</span>
+                <div class="space-y-3">
+                    <div class="job-entry">
+                        <h3 class="text-lg font-semibold">Guided Research</h3>
+                        <p class="italic text-sm">TUM | <a
+                                href="https://mediatum.ub.tum.de/doc/1726231/fmn8ps2ehx36eu7aum6ia8o94.GR_CUDA_SS23_AhmedFouad.pdf"
+                                        target="_blank" class="text-blue-600 hover:underline"
+                                class="text-blue-600">Optimizing GPU Offloading with CUDA for a Patch-based Hyperbolic Finite Volume Solver in ExaHyPE</a></p>
+                        <div class="mt-2 flex flex-wrap gap-2">
+                            <span class="tag">CUDA</span>
+                            <span class="tag">PTX</span>
+                            <span class="tag">Microbenchmarking</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section id="education" class="rounded-xl shadow-sm mb-section">
                 <h2 class="text-xl font-extrabold mb-3">Education</h2>
-                <div class="space-y-3">
-                    <div class="border-l-4 border-blue-500 pl-3">
-                        <h3 class="text-lg font-semibold">M.Sc. Computational Science and Engineering (Part-time)</h3>
-                        <p class="italic text-sm">Technical University of Munich, Germany | 10/20 - 09/25 | Grade:
-                            1.7/1.0</p>
-                        <p class="mt-1">Specialized in HPC, High Dimensional Data Reduction, Deep Learning, and
-                            Scientific Computing</p>
+                    <div class="space-y-3">
+                        <div class="border-l-4 border-blue-500 pl-3">
+                            <h3 class="text-lg font-semibold">M.Sc. Computational Science and Engineering (Part-time)</h3>
+                            <p class="italic text-sm">Technical University of Munich, Germany | 10/20 - 09/25 | Grade:
+                                1.7/1.0</p>
+                            <p class="mt-1">Specialized in HPC, High Dimensional Data Reduction, Deep Learning, and
+                                Scientific Computing</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-3">
+                            <h3 class="text-lg font-semibold">B.Sc. Mechatronics Engineering</h3>
+                            <p class="italic text-sm">Ain Shams University, Egypt | 09/07 - 06/13 | GPA: 2.7/4.0</p>
+                            <p class="mt-1">With graduation project GPA of 4.0/4.0.</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-3">
+                            <h3 class="text-lg font-semibold">Secondary School - Natural Sciences</h3>
+                            <p class="italic text-sm">Al-Shati Secondary School, Saudi Arabia | 09/04 - 06/07 | GPA: 3.9/4.0
+                            </p>
+                            <p class="mt-1">Graduated with distinction, studied natural and engineering sciences</p>
+                        </div>
                     </div>
-                    <div class="border-l-4 border-green-500 pl-3">
-                        <h3 class="text-lg font-semibold">B.Sc. Mechatronics Engineering</h3>
-                        <p class="italic text-sm">Ain Shams University, Egypt | 09/07 - 06/13 | GPA: 2.7/4.0</p>
-                        <p class="mt-1">With graduation project GPA of 4.0/4.0.</p>
-                    </div>
-                    <div class="border-l-4 border-green-500 pl-3">
-                        <h3 class="text-lg font-semibold">Secondary School - Natural Sciences</h3>
-                        <p class="italic text-sm">Al-Shati Secondary School, Saudi Arabia | 09/04 - 06/07 | GPA: 3.9/4.0
-                        </p>
-                        <p class="mt-1">Graduated with distinction, studied natural and engineering sciences</p>
-                    </div>
-                </div>
             </section>
 
             <section id="languages" class="rounded-xl shadow-sm">
