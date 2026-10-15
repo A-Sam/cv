@@ -101,34 +101,48 @@
                 <h2 class="text-xl font-extrabold mb-3">Experience</h2>
 
                 <div class="space-y-3">
-                    <div class="job-entry">
-                        <h3 class="text-lg font-semibold">Senior ML Optimization Engineer / Core AI</h3>
-                        <p class="italic text-sm">CARIAD, Volkswagen, Munich, Germany | 09/24 - Present | Full-time</p>
-                        <ul class="mt-2 text-gray-700 list-disc list-inside">
-                            <li>Optimized ONNX models for edge deployment through post-training quantization (PTQ) and pruning techniques, and orchestrating multi-node reduction op on Qualcomm Hexagon NPU (experimental) HW</li>
-                            <li>Developed and optimized custom operations for Qualcomm's Hexagon NPU (HTP, HVX, HMX) cores, achieving compute-bound performance at near-theoretical peak efficiency using efficient 4-way SIMD VLIW vector ops</li>
-                            <li>Enhanced QNN AI model inference runtime on edge hardware through state-of-the-art quantization and pruning, integrating experimental TVM workflows to compile optimized kernels</li>
-                            <li>Maintained and refactored vision models' multi-accelerator offloading environment supporting CUDA, HTP, CPU, and ONNX ops, experimenting with XLA for JIT compilation of tensor operations</li>
-                            <li>Prototyped distributed training setups using NCCL for multi-GPU synchronization, adapting an MPI-based single CPU-GPU offloading training setup to collective operations for direct multi-GPU offload from a single CPU host, reducing sync barriers by nearly 40%.</li>
-                            <li>Provided technical support for feature teams in vision models deployment and performance optimization</li>
-                        </ul>
-                        <div class="mt-2 flex flex-wrap gap-2">
-                            <span class="tag">C++17/20</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Assembly</span>
-                            <span class="tag">VLIW</span>
-                            <span class="tag">QNN</span>
-                            <span class="tag">CUDA</span>
-                            <span class="tag">ONNX</span>
-                            <span class="tag">Qualcomm HTP</span>
-                            <span class="tag">TensorFlow</span>
-                            <span class="tag">Pytorch</span>
-                            <span class="tag">Microbenchmarking</span>
-                            <span class="tag">CNN Vision Models</span>
-                            <span class="tag">NCCL</span>
-                            <span class="tag">TVM</span>
-                        </div>
+
+                <div class="job-entry">
+                    <h3 class="text-lg font-semibold">Senior ML Optimization Engineer / Core AI</h3>
+                    <p class="italic text-sm">CARIAD, Volkswagen, Munich, Germany | 09/24 - Present | Full-time</p>
+                
+                    <ul class="mt-2 text-gray-700 list-disc list-inside">
+                        <li>Optimized production computer vision models for real-time in-vehicle inference, analyzing end-to-end AI pipelines, identifying performance bottlenecks, and improving execution efficiency across heterogeneous compute platforms.</li>
+                
+                        <li>Performed in-depth inference profiling and hot-path analysis using NVIDIA TensorRT and CUDA tooling, investigating execution latency, kernel performance, memory bottlenecks, and optimization opportunities in production workloads.</li>
+                
+                        <li>Developed and optimized custom operators for Qualcomm Hexagon NPU (HTP, HVX, HMX), leveraging low-level SIMD/VLIW vectorization to achieve near-theoretical peak compute efficiency in compute-bound kernels.</li>
+                
+                        <li>Optimized ONNX models for resource-constrained edge deployment through post-training quantization (PTQ), pruning, and graph-level optimizations; explored TVM-based kernel compilation and multi-node reduction operations on experimental Qualcomm hardware.</li>
+                
+                        <li>Maintained and refactored heterogeneous AI inference and offloading infrastructure supporting CUDA, Qualcomm HTP, CPU, and ONNX operators, including investigations into XLA-based JIT compilation.</li>
+                
+                        <li>Contributed to the integration and deployment of computer vision models into production vehicle platforms, collaborating with feature teams on inference performance analysis, runtime troubleshooting, and model optimization.</li>
+                
+                        <li>Prototyped distributed multi-GPU training using NCCL collectives and MPI-based CPU–GPU offloading, reducing synchronization barriers by nearly 40%.</li>
+                    </ul>
+                
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span class="tag">C++17/20</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Assembly</span>
+                        <span class="tag">SIMD / VLIW</span>
+                        <span class="tag">TensorRT</span>
+                        <span class="tag">CUDA</span>
+                        <span class="tag">QNN</span>
+                        <span class="tag">Qualcomm HTP / HVX / HMX</span>
+                        <span class="tag">ONNX</span>
+                        <span class="tag">Inference Profiling</span>
+                        <span class="tag">Performance Optimization</span>
+                        <span class="tag">Edge AI</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">NCCL / MPI</span>
+                        <span class="tag">TVM</span>
                     </div>
+                </div>
+
                     </ul>
 
                     <div class="job-entry">
@@ -377,9 +391,8 @@
                 <h2 class="text-xl font-extrabold mb-3">Education</h2>
                     <div class="space-y-3">
                         <div class="border-l-4 border-blue-500 pl-3">
-                            <h3 class="text-lg font-semibold">M.Sc. Computational Science and Engineering (Part-time)</h3>
-                            <p class="italic text-sm">Technical University of Munich, Germany | 10/20 - 09/25 | Grade:
-                                1.7/1.0</p>
+                            <h3 class="text-lg font-semibold">M.Sc. Computational Science and Engineering</h3>
+                            <p class="italic text-sm">Technical University of Munich, Germany | 1.7/1.0</p>
                             <p class="mt-1">Specialized in HPC, High Dimensional Data Reduction, Deep Learning, and
                                 Scientific Computing</p>
                         </div>
@@ -400,9 +413,8 @@
             <section id="languages" class="rounded-xl shadow-sm">
                 <h2 class="text-xl font-extrabold mb-3">Languages</h2>
                 <ul class="list-disc list-inside">
-                    <li>Arabic: Native</li>
-                    <li>English: Full fluency (C1.2)</li>
-                    <li>German: Upper-Intermediate (B2.1)</li>
+                    <li>Arabic, English: Full fluency</li>
+                    <li>German: Upper-Intermediate (B2)</li>
                 </ul>
             </section>
         </main>
