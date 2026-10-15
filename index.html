@@ -369,23 +369,71 @@
                     </div>
             </section>
 
+
             <section id="projects" class="rounded-xl shadow-sm mb-section">
-                <h2 class="text-xl font-extrabold mb-3">Publications</h2>
+                <h2 class="text-xl font-extrabold mb-3">Research</h2>
                 <div class="space-y-3">
+            
+                    <div class="job-entry">
+                        <h3 class="text-lg font-semibold">
+                            Master's Thesis — LLM Inference Optimization on Tenstorrent AI Accelerators
+                        </h3>
+                        <p class="italic text-sm">
+                            Technical University of Munich (TUM) |
+                            M.Sc. Computational Science and Engineering
+                        </p>
+                        <ul class="mt-2 text-gray-700 list-disc list-inside">
+                            <li>
+                                Evaluated and optimized Llama 3.1 8B and Qwen 2.5 7B
+                                inference on Tenstorrent Wormhole B0 RISC-V-based
+                                AI accelerators, focusing on memory-bandwidth-bound
+                                autoregressive decoding.
+                            </li>
+                            <li>
+                                Characterized DRAM and Network-on-Chip (NoC)
+                                performance through hardware microbenchmarking,
+                                roofline analysis, and kernel-level profiling.
+                            </li>
+                            <li>
+                                Implemented and evaluated KV cache optimizations
+                                using hardware-native BFP8/BFP4 quantization,
+                                PyramidKV, and StreamingLLM to reduce memory
+                                bandwidth requirements during long-context inference.
+                            </li>
+                        </ul>
+                        <div class="mt-2 flex flex-wrap gap-2">
+                            <span class="tag">LLM Inference</span>
+                            <span class="tag">Tenstorrent Wormhole</span>
+                            <span class="tag">RISC-V</span>
+                            <span class="tag">TT-Metal / TT-NN</span>
+                            <span class="tag">KV Cache Optimization</span>
+                            <span class="tag">Quantization</span>
+                            <span class="tag">Roofline Analysis</span>
+                            <span class="tag">Microbenchmarking</span>
+                        </div>
+                    </div>
+            
                     <div class="job-entry">
                         <h3 class="text-lg font-semibold">Guided Research</h3>
-                        <p class="italic text-sm">TUM | <a
-                                href="https://mediatum.ub.tum.de/doc/1726231/fmn8ps2ehx36eu7aum6ia8o94.GR_CUDA_SS23_AhmedFouad.pdf"
-                                        target="_blank" class="text-blue-600 hover:underline"
-                                class="text-blue-600">Optimizing GPU Offloading with CUDA for a Patch-based Hyperbolic Finite Volume Solver in ExaHyPE</a></p>
+                        <p class="italic text-sm">
+                            TUM |
+                            <a href="https://mediatum.ub.tum.de/doc/1726231/fmn8ps2ehx36eu7aum6ia8o94.GR_CUDA_SS23_AhmedFouad.pdf"
+                               target="_blank"
+                               class="text-blue-600 hover:underline">
+                                Optimizing GPU Offloading with CUDA for a Patch-based
+                                Hyperbolic Finite Volume Solver in ExaHyPE
+                            </a>
+                        </p>
                         <div class="mt-2 flex flex-wrap gap-2">
                             <span class="tag">CUDA</span>
                             <span class="tag">PTX</span>
                             <span class="tag">Microbenchmarking</span>
                         </div>
                     </div>
+            
                 </div>
             </section>
+
 
             <section id="education" class="rounded-xl shadow-sm mb-section">
                 <h2 class="text-xl font-extrabold mb-3">Education</h2>
